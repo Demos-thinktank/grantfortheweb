@@ -7,7 +7,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is a staging version of the site. 
+          Edit files in the staging branch to make changes to the staging.
+          Use this version to preview changes before pushing to main.
         </p>
         <a
           className="App-link"
