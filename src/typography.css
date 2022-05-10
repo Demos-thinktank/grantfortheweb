@@ -1,0 +1,61 @@
+/** Avenir fonts **/
+
+@font-face {
+    font-family: "Oblique";
+    src: url('./fonts/Avenir-Oblique-11.ttf');
+}
+
+@font-face {
+    font-family: Roman;
+    src: url('./fonts/Avenir-Roman-12.ttf');
+}
+
+@font-face {
+    font-family: "Black";
+    src: url('./fonts/Avenir-Black-03.ttf');
+}
+
+@font-face {
+    font-family: BlackOB;
+    src: url('./fonts/Avenir-BlackOblique-04.ttf');
+}
+
+@font-face {
+    font-family: Book;
+    src: url('./fonts/Avenir-Book-01.ttf');
+}
+
+@font-face {
+    font-family: BookOB;
+    src: url('./fonts/Avenir-BookOblique-02.ttf');
+}
+
+@font-face {
+    font-family: Light;
+    src: url('./fonts/Avenir-Light-07.ttf');
+}
+
+@font-face {
+    font-family: LightOB;
+    src: url('./fonts/Avenir-LightOblique-08.ttf');
+}
+
+@font-face {
+    font-family: "Medium";
+    src: url('./fonts/Avenir-Medium-09.ttf');
+}
+
+@font-face {
+    font-family: MediumOB;
+    src: url('./fonts/Avenir-MediumOblique-10.ttf');
+}
+
+@font-face {
+    font-family: Heavy;
+    src: url('./fonts/Avenir-Heavy-05.ttf');
+}
+
+@font-face {
+    font-family: HeavyOB;
+    src: url('./fonts/Avenir-HeavyOblique-06.ttf');
+}
