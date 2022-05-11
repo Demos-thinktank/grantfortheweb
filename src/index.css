@@ -1,5 +1,5 @@
 @import './typography.css';
-@import "./css/colors.css";
+@import './colors.css';
 
 html, body {
   margin: 0;
