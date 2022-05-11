@@ -1,0 +1,17 @@
+:root {
+    /* Demos colours */
+    --demos-dark: hsl(187, 30%, 16%);
+    --demos-dark-grey: hsl(213, 5%, 43%);
+    --demos-light-grey: hsl(214, 14%, 78%);
+    --demos-light: hsl(198, 63%, 93%);
+    --demos-lemon: hsl(45, 97%, 85%);
+    --demos-teal: hsl(184, 45%, 67%);
+    --demos-orange: hsl(11, 82%, 63%);
+
+    /* Other colours */
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(220, 7%, 92%);
+    --color-light-grey: rgb(250,250,250);
+    --color-med-grey: hsl(214, 14%, 78%);
+    --color-black: hsl(0, 0%, 0%);
+}
