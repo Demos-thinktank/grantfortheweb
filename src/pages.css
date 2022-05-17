@@ -1,0 +1,25 @@
+/* page layout */
+.parent {
+    /* max-width: 1200px; */
+    display: grid;
+    grid-gap: 1rem;
+    /* margin: 0 auto; */
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: #fff;
+    color: #444; */
+}
+
+.parent > .div {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+@media screen and (max-width: 600px){
+    .parent{
+       grid-template-columns: repeat(1, 1fr);
+    }
+ }
+
