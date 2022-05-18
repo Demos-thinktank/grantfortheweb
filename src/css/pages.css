@@ -1,0 +1,74 @@
+@import './colors.css';
+@import './typography.css';
+
+/* ------- Content Page Layout ------- */
+
+.box > ul > li {
+    margin: 1rem;
+    list-style-type: none;
+}
+.box > ul > li > a {
+    text-decoration: none;
+}
+.back > a {
+    text-decoration: none;
+    color: var(--demos-orange);
+}
+.back {
+    font-family: BookOB;
+    font-weight: 500;
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    width: fit-content;
+    padding: .8rem;
+    border: 1px solid var(--demos-dark);
+    -webkit-box-shadow: 5px 5px 0px 0px var(--demos-orange);
+    -moz-box-shadow: 5px 5px 0px 0px var(--demos-orange);
+    box-shadow: 5px 5px 0px 0px var(--demos-light-grey);
+}
+.back:active {
+    position: absolute;
+	top: 2.3rem;
+    left: 2.3rem;
+}
+
+/* ------- Table of contents ------- */
+.link {
+    font-family: BookOB;
+    font-weight: 500;
+    color: var(--demos-orange);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    word-wrap: nowrap;
+}
+.link::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+}
+.link:hover::after {
+    width: 100%;
+    background: var(--demos-lemon);
+}
+/* Specific styles for active links */
+.link-active {
+    font-family: BookOB;
+    /* font-weight: 700; */
+    color: var(--demos-dark-grey);
+    position: relative;
+    margin-left: 2rem;
+}
+.link-active::after {
+    content: '\2192';
+    position: absolute;
+    left: -2rem;
+    transition: all 0.3s;
+}
+
