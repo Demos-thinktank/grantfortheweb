@@ -7,25 +7,25 @@ const LandingPage = () => (
             The Costs of Creation: What is a fair and desirable future for web monetisation?
         </BubbleWrapper>
 
-        <BubbleWrapper className="bubble one">
+        <BubbleWrapper className="bubble one border">
             <Link to='one'>
                 What is web monetization?
             </Link>        
         </BubbleWrapper>
 
-        <BubbleWrapper className="bubble two">
+        <BubbleWrapper className="bubble two border">
             <Link to='two'>
                 Why does the future of web monetisation matter?
             </Link>
         </BubbleWrapper>
 
-        <BubbleWrapper className="bubble three">
+        <BubbleWrapper className="bubble three border">
             <Link to='three'>
                 What do online workers and volunteers think?
             </Link>
         </BubbleWrapper>
         
-        <BubbleWrapper className="bubble four">
+        <BubbleWrapper className="bubble four border">
             <Link to='four'>
                 What should be done?
             </Link>
@@ -37,10 +37,9 @@ const Container = styled.div`
     --w:400px;
     --n:5;
     display:grid;
-    grid-row-gap: 2rem;
     width: 100vw;
     height: 100vh;
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 610px){
         display: block;
         background-color: aliceblue;
         height: 100%
@@ -54,7 +53,7 @@ const BubbleWrapper = styled.div`
     text-align: center;
     padding: 2rem;
     @media screen and (max-width: 600px){
-        margin: 2rem 0 0 0;
+        /* margin: 2rem 0 0 0; */
     }
 `
 
