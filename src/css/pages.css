@@ -1,0 +1,111 @@
+@import './colors.css';
+@import './typography.css';
+
+/* ------- Content Page Layout ------- */
+.hamburger > ul > li, .nav > ul > li {
+    margin: 1rem;
+    list-style-type: none;
+}
+.hamburger > ul > li > a, .nav > ul > li > a {
+    text-decoration: none;
+}
+
+/* Show hamburger menu in mobile; remove in larger screens
+    Hide Nav menu in mobile screens
+*/
+.hamburger-icon {
+    display: none;
+}
+@media screen and (max-width: 974px){
+    .hamburger-icon, .hamburger {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .hamburger {
+        position: absolute;
+        right: 2rem;
+        top: 5rem;
+        z-index: 1;
+        background-color: white;
+    }
+}
+
+/* Show home icon in mobile; remove in larger screens
+    Hide Back Button in mobile screens
+*/
+.mobile-back {
+    display: none;
+}
+@media screen and (max-width: 974px){
+    .mobile-back {
+        display: block;
+        color: var(--demos-dark);
+        font-size: 1.5rem;
+        width: fit-content;
+    }
+    .back {
+        display: none;
+    }
+}
+
+.back > a {
+    text-decoration: none;
+    color: var(--demos-orange);
+}
+.back {
+    font-family: BookOB;
+    font-weight: 500;
+    margin: 2rem 0 2rem 2rem;
+    width: fit-content;
+    height: fit-content;
+    padding: .8rem;
+    /* background-color: burlywood; */
+    border: 1px solid var(--demos-dark);
+    -webkit-box-shadow: 5px 5px 0px 0px var(--demos-light-grey);
+    -moz-box-shadow: 5px 5px 0px 0px var(--demos-light-grey);
+    box-shadow: 5px 5px 0px 0px var(--demos-light-grey);
+    position: relative;
+    /* z-index: 3; */
+}
+
+/* ------- Table of contents ------- */
+.link {
+    font-family: BookOB;
+    font-weight: 500;
+    color: var(--demos-orange);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    word-wrap: nowrap;
+}
+.link::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+}
+.link:hover::after {
+    width: 100%;
+    background: var(--demos-lemon);
+}
+/* Specific styles for active links */
+.link-active {
+    font-family: BookOB;
+    /* font-weight: 700; */
+    color: var(--demos-dark-grey);
+    position: relative;
+    margin-left: 2rem;
+}
+.link-active::after {
+    content: '\2192';
+    position: absolute;
+    left: -2rem;
+    transition: all 0.3s;
+}
+
