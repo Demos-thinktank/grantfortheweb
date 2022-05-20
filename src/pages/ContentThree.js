@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import ContentLayout from '../components/ContentLayout'
 
 const ContentThree = () => (
