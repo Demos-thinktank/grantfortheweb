@@ -77,21 +77,26 @@ function ContentLayout(props) {
 const Container = styled.section`
     min-height: 100vh;
     position: relative;
+    background-color: var(--color-light-grey);
 `
 const Header= styled.div`
     display: flex;
     align-items: center;
     padding: 0 2rem;
     margin: 2rem 0 0 0;
+    @media screen and (max-width: 425px){
+        padding: 0 1rem;
+    }
+`
+const ReturnButton = styled.div``
 
-`
-const ReturnButton = styled.div`
-`
 const Heading = styled.h1`
+    /* border: 1px solid red; */
     width: fit-content;
-    margin: 1rem auto;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
-    padding: 2rem;
     font-family: "Black";
     color: var(--demos-teal);
     @media screen and (max-width: 1190px){
@@ -106,7 +111,6 @@ const ContentWrapper = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2,1fr);
     justify-items: center;
-    padding: 3rem;
     height: inherit;
     @media screen and (max-width: 974px){
         grid-template-columns: repeat(1, 1fr);
@@ -120,7 +124,9 @@ const Title = styled.h2`
     text-align: center;
     grid-area: 1 / 1 / span 1;
     height: fit-content;
-    width: clamp(250px, 100%, 360px);
+    @media screen and (max-width: 345px){
+        font-size: 1.4rem;
+    }
 `
 const ToggleButton = styled.button`
     background-color: transparent;
@@ -128,15 +134,21 @@ const ToggleButton = styled.button`
     cursor: pointer;
     font-size: 2rem;
     color: var(--demos-orange);
-    width: 5%;
+    @media screen and (max-width: 425px){
+        font-size: 1.5rem;
+    }
 `
 
 const Text = styled.div`
+    /* border: 2px solid red; */
     grid-area: 1 / 1 / span 2;
     height: fit-content;
-    margin-top: 6rem;
+    margin-top: 4rem;
     font-family: Book;
-    padding: 1rem;
+    padding: 1.5rem;
+    @media screen and (max-width: 425px){
+        margin-top: 5rem;
+    }
 `
 const ImageWrapper = styled.div`
     /* border: 2px solid red; */
@@ -147,6 +159,9 @@ const ImageWrapper = styled.div`
         position: absolute;
         right: 5rem;
     }
+    @media screen and (max-width: 425px){
+        width: 100px;
+}
 `
 const Image = styled.img``
 

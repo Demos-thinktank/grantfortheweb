@@ -8,26 +8,26 @@ const LandingPage = () => (
             The Costs of Creation: What is a fair and desirable future for web monetisation?
         </div>
 
-        <Link to="one" className="bubble one border">
-            What is web monetization?
+        <Link to="what-is-web-monetisation" className="bubble one border">
+            What is web monetisation?
         </Link>
 
-        <Link to='two' className="bubble two border">
+        <Link to='why-does-web-monetisation-matter' className="bubble two border">
             Why does the future of web monetisation matter?
         </Link>
 
-        <Link to='three' className="bubble three border">
+        <Link to='what-do-online-workers-think' className="bubble three border">
             What do online workers and volunteers think?
         </Link>
         
-        <Link to='four' className="bubble four border">
+        <Link to='what-should-be-done' className="bubble four border">
             What should be done?
         </Link>
     </Container>
 )
 
 const Container = styled.div`
-    background-color: var(--demos-light);
+    background-color: var(--color-light-grey);
     --w:400px;
     --n:5;
     display:grid;
@@ -35,7 +35,6 @@ const Container = styled.div`
     height: 100vh;
     @media screen and (max-width: 610px){
         display: block;
-        border: 2px solid red;
     }
 
 `
