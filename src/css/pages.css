@@ -49,6 +49,11 @@
         display: none;
     }
 }
+@media screen and (max-width: 425px){
+    .mobile-back {
+        font-size: 1.2rem;
+    }
+}
 
 .back > a {
     text-decoration: none;
