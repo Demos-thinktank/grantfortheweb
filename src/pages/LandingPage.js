@@ -5,7 +5,7 @@ import '../css/colors.css'
 const LandingPage = () => (
     <Container>
         <div className="bubble center">
-            The Costs of Creation: What is a fair and desirable future for web monetisation?
+            The Costs of Creation: What is a fair and desirable future for web monetisation? uyfhgchgjsydluc;
         </div>
 
         <Link to="what-is-web-monetisation" className="bubble one border">
