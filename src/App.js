@@ -12,10 +12,10 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={ <LandingPage/> } />
-        <Route path="one" element={ <ContentOne/> } />
-        <Route path="two" element={ <ContentTwo/> } />
-        <Route path="three" element={ <ContentThree/> } />
-        <Route path="four" element={ <ContentFour/> } />
+        <Route path="what-is-web-monetisation" element={ <ContentOne/> } />
+        <Route path="why-does-web-monetisation-matter" element={ <ContentTwo/> } />
+        <Route path="what-do-online-workers-think" element={ <ContentThree/> } />
+        <Route path="what-should-be-done" element={ <ContentFour/> } />
       </Routes>
     </div>
   );

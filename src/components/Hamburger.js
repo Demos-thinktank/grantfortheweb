@@ -9,22 +9,22 @@ const Hamburger = () => (
     <TableOfContents className="hamburger">
         <ul>
             <li>
-                <NavLink to="/one" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>
+                <NavLink to="/what-is-web-monetisation" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>
                     What is web monetisation?
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/two" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>
+                <NavLink to="/why-does-web-monetisation-matter" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>
                     Why does the future of web monetisation matter?
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/three" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>
+                <NavLink to="/what-do-online-workers-think" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>
                     What do online workers and volunteers think?
                 </NavLink>                    
             </li>
             <li>
-                <NavLink to="/four" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>
+                <NavLink to="/what-should-be-done" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>
                     What should be done?
                 </NavLink>
             </li>
