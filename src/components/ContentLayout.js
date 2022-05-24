@@ -141,12 +141,17 @@ const Title = styled.h2`
     /* border: 1px solid red; */
     padding: .2rem;
     font-family: BlackOB;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     text-align: center;
     grid-area: 1 / 1 / span 1;
     height: fit-content;
-    @media screen and (max-width: 345px){
+    @media screen and (max-width: 425px){
         font-size: 1.4rem;
+        border: 1px solid green;
+    }
+    @media screen and (max-width: 400px){
+        font-size: 1rem;
+        /* border: 1px solid red; */
     }
 `
 const ToggleButton = styled.button`
