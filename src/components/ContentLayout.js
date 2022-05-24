@@ -35,6 +35,10 @@ function ContentLayout(props) {
                     </Link>
                 </ReturnButton>
 
+                <HeadingWrapper>
+                    <Heading>{props.heading}</Heading>
+                </HeadingWrapper>
+
                 <ImageWrapper>
                     <a href="https://demos.co.uk/" target="_blank" rel="noreferrer">
                         <Image src={logo} alt="" width="120" height="auto"/>
@@ -45,10 +49,9 @@ function ContentLayout(props) {
                     <FontAwesomeIcon icon={icons ? Cross : Bar}/>
                 </ToggleButton>
                 {icons && <Hamburger/>}
-                
             </Header>
 
-            <Heading>{props.heading}</Heading>
+            <MobileHeading><Heading>{props.heading}</Heading></MobileHeading>
 
             <ContentWrapper className="wrapper">
                 <Title className="title"> {props.title} </Title>
@@ -80,31 +83,49 @@ const Container = styled.section`
     background-color: var(--color-light-grey);
 `
 const Header= styled.div`
+    /* border: 1px solid blue; */
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 4rem;
     margin: 2rem 0 0 0;
+    @media screen and (max-width: 974px){
+        display: flex; 
+    }
     @media screen and (max-width: 425px){
-        padding: 0 1rem;
+        padding: 0 2rem;
     }
 `
 const ReturnButton = styled.div``
 
-const Heading = styled.h1`
+const HeadingWrapper = styled.div`
     /* border: 1px solid red; */
-    width: fit-content;
+    width: clamp(200px, 70%, 380px);
     margin: 0 auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-family: "Black";
-    color: var(--demos-teal);
-    @media screen and (max-width: 1190px){
-        font-size: 1.2rem;
-        width: 60%;
+    @media screen and (max-width: 974px){
+        display: none;
     }
 `
+const MobileHeading = styled.div`
+    /* border: 1px solid red; */
+    width: clamp(200px, 70%, 380px);
+    margin: 2rem auto;
+    @media screen and (min-width: 974px){
+        display: none;
+    }
+`
+
+const Heading = styled.h1`
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Black";
+    font-size: 1.2rem;
+    color: var(--demos-teal);
+`
 const ContentWrapper = styled.div`
+    /* border: 1px solid green; */
+    margin: 2rem;
     display: grid;
     grid-row-gap: 1rem; 
     grid-column-gap: 4rem;
@@ -151,18 +172,14 @@ const Text = styled.div`
     }
 `
 const ImageWrapper = styled.div`
-    /* border: 2px solid red; */
-    height: fit-content;
-    flex: 1; 
-    text-align: center;
-    @media screen and (min-width: 974px){
-        position: absolute;
-        right: 5rem;
-    }
     @media screen and (max-width: 425px){
-        width: 100px;
-}
+        margin: 1rem auto;
+    }
 `
-const Image = styled.img``
+const Image = styled.img`
+    @media screen and (max-width: 425px){
+        width: 95px;
+    }
+`
 
 export default ContentLayout;
