@@ -28,36 +28,28 @@ function ContentLayout(props) {
                         &#8689; Back to Home
                     </Link>
                 </ReturnButton>
-
                 <ReturnButton>
                     <Link to='/' className="mobile-back">
                         <FontAwesomeIcon icon={Home}/>
                     </Link>
                 </ReturnButton>
-
                 <HeadingWrapper>
                     <Heading>{props.heading}</Heading>
                 </HeadingWrapper>
-
                 <ImageWrapper>
                     <a href="https://demos.co.uk/" target="_blank" rel="noreferrer">
                         <Image src={logo} alt="" width="120" height="auto"/>
                     </a>
                 </ImageWrapper>
-
                 <ToggleButton onClick={toggleIcon} className="hamburger-icon">
                     <FontAwesomeIcon icon={icons ? Cross : Bar}/>
                 </ToggleButton>
                 {icons && <Hamburger/>}
             </Header>
-
             <MobileHeading><Heading>{props.heading}</Heading></MobileHeading>
-
             <ContentWrapper className="wrapper">
                 <Title className="title"> {props.title} </Title>
-                
                 <Navigation/>
-
                 <Text className="text">
                     <p>
                         {props.text}

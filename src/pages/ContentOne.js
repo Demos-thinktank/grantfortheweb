@@ -2,6 +2,13 @@ import ContentLayout from '../components/ContentLayout'
 
 const ContentOne = () => (
     <>
+        {/* 
+            (NOTE: PLEASE ONLY DELETE THIS COMMENT ONCE CONTENT EDITING IS FINISHED) 
+            ↓↓↓ @CIARAN - BELOW IS WHERE YOU PUT IN YOUR MAIN TEXT CONTENT ↓↓↓
+            (PASTE YOUR TEXT WHERE LOREM IPSUM RESIDES)
+            (You can also edit the overall heading of the website /and/ the 
+            respective section titles if you need to)
+        */}
         <ContentLayout 
             heading="The Costs of Creation: What is a fair and desirable future for web monetisation?" 
             title="What is web monetisation?"
