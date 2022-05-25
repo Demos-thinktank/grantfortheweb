@@ -17,7 +17,7 @@ function ContentLayout(props) {
     const [icons, setIcons] = useState(false);
     const toggleIcon = () => {
         setIcons(!icons)
-        console.log('hello icon')
+        // console.log('hello icon')
     }
 
     return (
@@ -61,15 +61,6 @@ function ContentLayout(props) {
                 <Text className="text">
                     <p>
                         {props.text}
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius enim et sapien placerat tincidunt. Donec a arcu ut urna volutpat scelerisque. Curabitur tempor congue laoreet. Quisque vel pretium ante, nec congue elit. Morbi condimentum lobortis arcu, vel blandit ipsum scelerisque vitae. Aliquam condimentum, orci et fermentum semper, massa ante gravida enim, vitae aliquet diam mauris sit amet eros. Vestibulum et purus imperdiet, fermentum leo et, viverra turpis. Fusce semper semper convallis. Etiam fermentum vitae velit non molestie. Aliquam elementum pretium justo ac tempor. Maecenas efficitur id ipsum id molestie. Nulla volutpat vulputate nulla, elementum rutrum mi.
-                    </p>
-                    <p>
-                        {props.text}
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius enim et sapien placerat tincidunt. Donec a arcu ut urna volutpat scelerisque. Curabitur tempor congue laoreet. Quisque vel pretium ante, nec congue elit. Morbi condimentum lobortis arcu, vel blandit ipsum scelerisque vitae. Aliquam condimentum, orci et fermentum semper, massa ante gravida enim, vitae aliquet diam mauris sit amet eros. Vestibulum et purus imperdiet, fermentum leo et, viverra turpis. Fusce semper semper convallis. Etiam fermentum vitae velit non molestie. Aliquam elementum pretium justo ac tempor. Maecenas efficitur id ipsum id molestie. Nulla volutpat vulputate nulla, elementum rutrum mi.
-                    </p>
-                    <p>
-                        {props.text}
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius enim et sapien placerat tincidunt. Donec a arcu ut urna volutpat scelerisque. Curabitur tempor congue laoreet. Quisque vel pretium ante, nec congue elit. Morbi condimentum lobortis arcu, vel blandit ipsum scelerisque vitae. Aliquam condimentum, orci et fermentum semper, massa ante gravida enim, vitae aliquet diam mauris sit amet eros. Vestibulum et purus imperdiet, fermentum leo et, viverra turpis. Fusce semper semper convallis. Etiam fermentum vitae velit non molestie. Aliquam elementum pretium justo ac tempor. Maecenas efficitur id ipsum id molestie. Nulla volutpat vulputate nulla, elementum rutrum mi.
                     </p>
                 </Text>
             </ContentWrapper>
@@ -83,7 +74,6 @@ const Container = styled.section`
     background-color: var(--color-light-grey);
 `
 const Header= styled.div`
-    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -99,7 +89,6 @@ const Header= styled.div`
 const ReturnButton = styled.div``
 
 const HeadingWrapper = styled.div`
-    /* border: 1px solid red; */
     width: clamp(200px, 70%, 380px);
     margin: 0 auto;
     @media screen and (max-width: 974px){
@@ -107,7 +96,6 @@ const HeadingWrapper = styled.div`
     }
 `
 const MobileHeading = styled.div`
-    /* border: 1px solid red; */
     width: clamp(200px, 70%, 380px);
     margin: 2rem auto;
     @media screen and (min-width: 974px){
@@ -116,7 +104,6 @@ const MobileHeading = styled.div`
 `
 
 const Heading = styled.h1`
-    /* border: 1px solid red; */
     margin: 0 auto;
     text-align: center;
     font-family: "Black";
@@ -124,7 +111,6 @@ const Heading = styled.h1`
     color: var(--demos-teal);
 `
 const ContentWrapper = styled.div`
-    /* border: 1px solid green; */
     margin: 2rem;
     display: grid;
     grid-row-gap: 1rem; 
@@ -138,7 +124,6 @@ const ContentWrapper = styled.div`
     }
 `
 const Title = styled.h2`
-    /* border: 1px solid red; */
     padding: .2rem;
     font-family: BlackOB;
     font-size: 1.6rem;
@@ -151,7 +136,6 @@ const Title = styled.h2`
     }
     @media screen and (max-width: 400px){
         font-size: 1rem;
-        /* border: 1px solid red; */
     }
 `
 const ToggleButton = styled.button`
@@ -166,7 +150,6 @@ const ToggleButton = styled.button`
 `
 
 const Text = styled.div`
-    /* border: 2px solid red; */
     grid-area: 1 / 1 / span 2;
     height: fit-content;
     margin-top: 4rem;
