@@ -124,7 +124,6 @@ const Title = styled.h2`
     height: fit-content;
     @media screen and (max-width: 425px){
         font-size: 1.4rem;
-        border: 1px solid green;
     }
     @media screen and (max-width: 400px){
         font-size: 1rem;
