@@ -13,7 +13,7 @@
 /* Show hamburger menu in mobile; remove in larger screens
     Hide Nav menu in mobile screens
 */
-.hamburger-icon {
+.hamburger-icon, .hamburger {
     display: none;
 }
 @media screen and (max-width: 974px){
