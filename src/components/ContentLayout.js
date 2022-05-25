@@ -139,7 +139,6 @@ const Text = styled.div`
     padding: 1rem;
 `
 const ImageWrapper = styled.div`
-    /* border: 2px solid red; */
     height: fit-content;
     flex: 1; 
     text-align: center;
