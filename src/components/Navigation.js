@@ -40,6 +40,9 @@ const TableOfContents = styled.nav`
     -webkit-box-shadow: 12px 12px 0px 0px var(--demos-teal);
     -moz-box-shadow: 12px 12px 0px 0px var(--demos-teal);
     box-shadow: 12px 12px 0px 0px var(--demos-teal);
+    @media screen and (max-width: 1085px){
+        width: 95%;
+    }
 `
 
 export default Navigation;

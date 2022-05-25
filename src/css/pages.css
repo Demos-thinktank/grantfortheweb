@@ -66,13 +66,11 @@
     width: fit-content;
     height: fit-content;
     padding: .8rem;
-    /* background-color: burlywood; */
     border: 1px solid var(--demos-dark);
     -webkit-box-shadow: 5px 5px 0px 0px var(--demos-light-grey);
     -moz-box-shadow: 5px 5px 0px 0px var(--demos-light-grey);
     box-shadow: 5px 5px 0px 0px var(--demos-light-grey);
     position: relative;
-    /* z-index: 3; */
 }
 
 /* ------- Table of contents ------- */
@@ -84,6 +82,11 @@
     display: inline-block;
     position: relative;
     word-wrap: nowrap;
+}
+@media screen and (max-width: 1085px){
+    .link, .link-active {
+        font-size: .8rem;
+    }
 }
 .link::after {
     content: "";
@@ -102,7 +105,6 @@
 /* Specific styles for active links */
 .link-active {
     font-family: BookOB;
-    /* font-weight: 700; */
     color: var(--demos-dark-grey);
     position: relative;
     margin-left: 2rem;
@@ -113,4 +115,3 @@
     left: -2rem;
     transition: all 0.3s;
 }
-
