@@ -35,11 +35,15 @@ const Hamburger = () => (
 const TableOfContents = styled.nav`
     border: 1px solid lightgrey;
     padding: 0.5rem;
-    width: clamp(450px, 60%, 500px);
+    width: clamp(200px,60%,500px);
     height: fit-content;
     -webkit-box-shadow: 12px 12px 0px 0px var(--demos-teal);
     -moz-box-shadow: 12px 12px 0px 0px var(--demos-teal);
     box-shadow: 12px 12px 0px 0px var(--demos-teal);
+    @media screen and (max-width: 425px){
+        padding: 0rem;
+        width: 60%;
+    }
 `
 
 export default Hamburger;

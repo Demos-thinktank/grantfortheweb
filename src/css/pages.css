@@ -6,6 +6,7 @@
     margin: 1rem;
     list-style-type: none;
 }
+
 .hamburger > ul > li > a, .nav > ul > li > a {
     text-decoration: none;
 }
@@ -114,4 +115,15 @@
     position: absolute;
     left: -2rem;
     transition: all 0.3s;
+}
+@media screen and (max-width: 608px){
+    .link-active::after {
+        display: none;
+    }
+    .link-active {
+        margin: 0;
+    }
+    .link:hover::after {
+        display: none;
+    }
 }
