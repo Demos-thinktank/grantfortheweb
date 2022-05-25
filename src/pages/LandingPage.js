@@ -2,12 +2,12 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom";
 import '../css/colors.css'
 
-{/* 
+/* 
     (NOTE: PLEASE ONLY DELETE THIS COMMENT ONCE CONTENT EDITING IS FINISHED) 
     ↓↓↓ @CIARAN - HERE ARE THE BOXES SHOWN IN THE LANDING PAGE ↓↓↓
     (YOU CAN EDIT THEIR TITLES HERE IF EVER NEEDED - 
     BUT REMEMBER TO CHANGE IT ACROSS THE SITE TOO!)
-*/}
+*/
 
 const LandingPage = () => (
     <Container>
