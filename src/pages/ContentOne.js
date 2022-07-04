@@ -31,7 +31,7 @@ const ContentOne = () => (
                 (4) This replaces alternative web monetisation on the site in question and may offer perks; for example, it could remove advertisements and allow you
                 to access more content.
 
-                The model above comes from an organisation spearheading this experimentation, an independently managed fund called Grant for the Web (GftW) created by
+                The model above comes from an organisation spearheading this experimentation, an independently managed fund called [Grant for the Web](https://www.grantfortheweb.org/faq)(GftW) created by
                 Coil, Mozilla and Creative Commons. In addition to funding independent research into web monetisation such as this report, GftW are funding people’s
                 experiments in applying this model through the Web Monetization API (a specific web application for adding the above model to a site). 
                 
