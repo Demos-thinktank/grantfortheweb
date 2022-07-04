@@ -14,17 +14,9 @@ const ContentOne = () => (
             title="What is web monetisation?"
             text=
             {`
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Phasellus varius enim et sapien placerat tincidunt. Donec a arcu 
-                ut urna volutpat scelerisque. Curabitur tempor congue laoreet. 
-                Quisque vel pretium ante, nec congue elit. Morbi condimentum 
-                lobortis arcu, vel blandit ipsum scelerisque vitae. Aliquam 
-                condimentum, orci et fermentum semper, massa ante gravida enim, 
-                vitae aliquet diam mauris sit amet eros. Vestibulum et purus 
-                imperdiet, fermentum leo et, viverra turpis. Fusce semper semper 
-                convallis. Etiam fermentum vitae velit non molestie. Aliquam 
-                elementum pretium justo ac tempor. Maecenas efficitur id ipsum 
-                id molestie. Nulla volutpat vulputate nulla, elementum rutrum mi.
+                Simply put, web monetisation refers to the process of turning web traffic (i.e. site visits) into a revenue stream. Online, we are surrounded by various
+                models of web monetisation, from advertising, to subscription sign-ups, to the selling of the data collected about site visitors, to the sale of products
+                and services, and much more.
             `}
         />
     </>
