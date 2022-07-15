@@ -1,5 +1,3 @@
-import styled from 'styled-components'
-import { Link } from "react-router-dom";
 import TableOfContents from '../components/Navigation';
 import '../css/colors.css'
 import logo from '../assets/logo.svg';
