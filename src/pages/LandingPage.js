@@ -13,7 +13,7 @@ const LandingPage = () => (
         <div id='mainpage-container'>
             <div class='image-wrapper'>
                 <a href="https://demos.co.uk/" target="_blank" rel="noreferrer">
-                    <img id='demos-logo' src={logo} alt="Demos logo" height="auto"/>
+                    <img class='demos-logo' src={logo} alt="Demos logo" height="auto"/>
                 </a>
             </div>
             <div id='titles'>
@@ -22,8 +22,7 @@ const LandingPage = () => (
             </div>
         </div>
         <TableOfContents />
-        <footer>
-        </footer>
+        <footer></footer>
     </div>
 
 

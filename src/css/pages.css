@@ -1,11 +1,17 @@
 @import './colors.css';
 @import './typography.css';
 
+html, body {
+    height: 100%
+}
+
+a {
+    text-decoration: none;
+}
 /* ------- Landing page ------- */
 
 /* This it he parent element for absolutely positioning the nav */
-#backdrop {
-    
+#backdrop, #article{
     background-image: url('../assets/the_boys.jpg');
     height: 100vh;
     position: relative;
@@ -22,7 +28,7 @@
     margin: 100px;
 }
 
-#demos-logo {
+.demos-logo {
     width: 220px;
 }
 
@@ -53,15 +59,60 @@ h2 {
     font-weight: 400;
 }
 
-/* ------- Footer ------- */
-footer {
+/* ------- Article page ------- */
+.text-wrapper{
+    background: #eee;
+    position: relative;
+    margin-top: 80px;
+    margin-right: 400px;
+    float: right;
+    min-height: calc(100vh - 80px);
+    padding: 40px 50px;
+    max-width: 960px;
+}
+
+#page-title h1{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Light, sans-serif;
+    font-size: 1.2rem;
+}
+
+.text-wrapper h2 {
+    color: black;
+}
+
+/* ------- Header / Footer ------- */
+footer, header {
     height: 80px;
     background-color: var(--demos-orange);
     width: 100%;
     position: fixed;
+    z-index: 4;
+}
+
+footer {
     bottom: 0;
 }
 
+header {
+    top: 0;
+}
+
+header .demos-logo {
+    padding: 23px;
+    position: fixed;
+    right: 0;
+}
+#page-title {
+    position: absolute;
+    width: 680px;
+    margin-left: 50px;
+    padding-top: 16px;
+}
 
 /* ------- Nav Layout ------- */
 .lozenge {
@@ -84,7 +135,7 @@ footer {
     overflow: hidden;
 }
 
-.link {
+.link, .section-head {
     font-family: Black;
     font-weight: 500;
     color: var(--demos-dark);
@@ -95,14 +146,12 @@ footer {
     font-size: 1.8rem;
 }
 
-
-/* ------- Content Page Layout ------- */
-.hamburger > ul > li, .nav > ul > li {
-    margin: 1rem;
-    list-style-type: none;
+#article .nav {
+    margin-top: 60px;
+    height: calc(100vh - 140px);
 }
 
-.hamburger > ul > li > a, .nav > ul > li > a {
+.nav > ul > li > a {
     text-decoration: none;
 }
 
@@ -132,7 +181,10 @@ footer {
     .nav {
         width: 300px;
     }
-    
+    .text-wrapper {
+        margin-right: 300px;
+    }
+
     .link {
         font-size: 1.2rem;
     }
@@ -147,10 +199,26 @@ footer {
     #titles h2 {
         font-size: 1.8em;
     }
+    #page-title {
+        width: 400px;
+        padding-top: 12px;
+    }
+    #page-title h1 {
+        font-size: 1.2em;
+    }
 }
 
 /* ------- Mobile break ------- */
 @media screen and (max-width: 700px) {
+    #page-title {
+        display: none;
+    }
+
+    .text-wrapper {
+        width: 100%;
+        margin-right: 0
+    }
+
     .image-wrapper, #titles {
         width: 100%;
         min-width: 350px;
@@ -159,11 +227,13 @@ footer {
         padding: 50px;
     }
 
-    .nav {
+    .nav, #article .nav {
         width: 100%;
         min-width: 350px;
         position: relative;
         padding-left: 50px;
+        height: auto;
+        min-height: 0;
     }
 
     #mainpage-container {
@@ -175,80 +245,8 @@ footer {
     footer {
         height: 40px;
     }
-}
 
-/* Show hamburger menu in mobile; remove in larger screens
-    Hide Nav menu in mobile screens
-*/
-.hamburger-icon, .hamburger {
-    display: none;
-}
-@media screen and (max-width: 974px){
-    .hamburger-icon, .hamburger {
-        display: block;
-    }
-    .hamburger {
-        position: absolute;
-        right: 2rem;
-        top: 5rem;
-        z-index: 1;
-        background-color: white;
-    }
-}
-
-/* Show home icon in mobile; remove in larger screens
-    Hide Back Button in mobile screens
-*/
-.mobile-back {
-    display: none;
-}
-@media screen and (max-width: 974px){
-    .mobile-back {
-        display: block;
-        color: var(--demos-dark);
-        font-size: 1.5rem;
-        width: fit-content;
-    }
-    .back {
-        display: none;
-    }
-}
-@media screen and (max-width: 425px){
-    .mobile-back {
-        font-size: 1.2rem;
-    }
-}
-
-.back > a {
-    text-decoration: none;
-    color: var(--demos-orange);
-}
-.back {
-    font-family: Avenir;
-    font-weight: 500;
-    margin: 2rem 0 2rem 2rem;
-    width: fit-content;
-    height: fit-content;
-    padding: .8rem;
-    border: 1px solid var(--demos-dark);
-    -webkit-box-shadow: 5px 5px 0px 0px var(--demos-light-grey);
-    -moz-box-shadow: 5px 5px 0px 0px var(--demos-light-grey);
-    box-shadow: 5px 5px 0px 0px var(--demos-light-grey);
-    position: relative;
-}
-
-
-
-/* Specific styles for active links */
-
-@media screen and (max-width: 608px){
-    .link-active::after {
-        display: none;
-    }
-    .link-active {
-        margin: 0;
-    }
-    .link:hover::after {
-        display: none;
+    header .demos-logo {
+        left: 25px;
     }
 }
