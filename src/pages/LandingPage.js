@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom";
 import TableOfContents from '../components/Navigation';
 import '../css/colors.css'
-
+import logo from '../assets/logo.svg';
 /* 
     (NOTE: PLEASE ONLY DELETE THIS COMMENT ONCE CONTENT EDITING IS FINISHED) 
     ↓↓↓ @CIARAN - HERE ARE THE BOXES SHOWN IN THE LANDING PAGE ↓↓↓
@@ -13,7 +13,11 @@ import '../css/colors.css'
 const LandingPage = () => (
     <div id='backdrop'>
         <div id='mainpage-container'>
-            
+            <div class='image-wrapper'>
+                <a href="https://demos.co.uk/" target="_blank" rel="noreferrer">
+                    <img id='demos-logo' src={logo} alt="Demos logo" height="auto"/>
+                </a>
+            </div>
             <div id='titles'>
                 <h1>THE COSTS OF CREATI<span class='demos-o'>O</span>N</h1>
                 <h2>What is a fair and desirable future for web monetisation?</h2>
@@ -26,6 +30,5 @@ const LandingPage = () => (
 
 
 )
-
 
 export default LandingPage;
