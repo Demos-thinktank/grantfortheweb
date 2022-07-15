@@ -1,10 +1,4 @@
-import styled from 'styled-components'
-
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars as Bar, faTimes as Cross, faHome as Home } from '@fortawesome/free-solid-svg-icons'
-
+import React from 'react';
 import TableOfContents from "./Navigation"
 
 import '../css/pages.css'
@@ -13,12 +7,6 @@ import '../css/colors.css'
 import whitelogo from '../assets/demos-white-logo.png';
 
 function ContentLayout(props) {
-    const [icons, setIcons] = useState(false);
-    const toggleIcon = () => {
-        setIcons(!icons);
-        // console.log('hello icon')
-    }
-
     return (
         <div id='article'>
             <header>
