@@ -7,14 +7,16 @@ html, body {
 
 a {
     text-decoration: none;
+    color: var(--demos-orange);
 }
 /* ------- Landing page ------- */
 
 /* This it he parent element for absolutely positioning the nav */
 #backdrop, #article{
-    background-image: url('../assets/the_boys.jpg');
+    background-image: url('../assets/smile.jpeg');
     height: 100vh;
     position: relative;
+    background-size: 100%;
 }
 
 #mainpage-container {
@@ -61,13 +63,13 @@ h2 {
 
 /* ------- Article page ------- */
 .text-wrapper{
-    background: #eee;
+    background: rgb(245, 244, 244);
     position: relative;
     margin-top: 80px;
     margin-right: 400px;
     float: right;
     min-height: calc(100vh - 80px);
-    padding: 40px 50px;
+    padding: 40px 50px 100px 50px;
     max-width: 960px;
 }
 
@@ -85,6 +87,18 @@ p {
     color: black;
 }
 
+.text p, .text ol{
+    margin-bottom: 1rem;
+}
+
+.text ol{
+    padding: revert;
+}
+
+.text li{
+    display: list-item;
+    overflow-x: visible;
+}
 /* ------- Header / Footer ------- */
 footer, header {
     height: 80px;
@@ -115,6 +129,10 @@ header .demos-logo {
 }
 
 /* ------- Nav Layout ------- */
+.main-wrapper {
+    position: relative;
+}
+
 .lozenge {
     background-color: var(--demos-orange);
     border-radius: 11px;
@@ -129,8 +147,9 @@ header .demos-logo {
     position: absolute;
     right: 0;
     top: 0;
+    bottom: 0;
     background-color: white;
-    height: calc(100vh - 80px);
+    /*height: calc(100vh - 80px);*/
     min-height: 720px;
     overflow: hidden;
 }
@@ -148,14 +167,12 @@ header .demos-logo {
 
 #article .nav {
     margin-top: 60px;
-    height: calc(100vh - 140px);
+    /*height: calc(100vh - 140px);*/
 }
 
 .nav > ul > li > a {
     text-decoration: none;
 }
-
-
 
 
 /* ------- Breaks ------- */

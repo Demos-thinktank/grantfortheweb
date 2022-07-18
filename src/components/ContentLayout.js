@@ -22,7 +22,7 @@ function ContentLayout(props) {
                 </div>
 
             </header>
-
+            <div class= "main-wrapper">
             <div class="text-wrapper">
                 <h2 class="title section-head"> {props.title} </h2>
                 <div class="lozenge" />
@@ -31,9 +31,10 @@ function ContentLayout(props) {
                         {props.text}
                     </p>
                 </div>
+                </div>
+                <TableOfContents />
             </div>
 
-            <TableOfContents />
             <footer></footer>
 
         </div>
