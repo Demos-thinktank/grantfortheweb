@@ -14,7 +14,7 @@ const ContentFour = () => (
             title="What should be done?"
             text=
             {<>
-                <p>Our research offers insight into the the steps decision-makers, civil society and tech companies need to take to create a fair and desirable future for web monetisation. Below you read our summarised recommendations or read them in detail in our full report. You can also take part in the same interactive poll that formed part of the research. In this way, we can together continue to broaden the debate about what a fair and desirable future for web monetisation looks like.</p>
+                <p>Our research offers insight into the the steps decision-makers, civil society and tech companies need to take to create a fair and desirable future for web monetisation. Below you can read our summarised recommendations or read them in detail in our full report. You can also take part in the same interactive poll that formed part of the research. In this way, we can together continue to broaden the debate about what a fair and desirable future for web monetisation looks like.</p>
                 <div class='expander'>
                     <h3 class='intext-heading'>Recommendation Summaries</h3>
                     <p>Despite divisions, we found an overarching background of consensus among workers and volunteers. There is a broad sense that prevailing monetisation is unfair and needs to be changed. <span class='orange'>To bring about a fairer future for web monetisation requires strengthening worker and volunteer collective power and improving their visibility.</span></p>
