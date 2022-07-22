@@ -27,17 +27,16 @@ function ContentLayout(props) {
                 <h2 class="title section-head"> {props.title} </h2>
                 <div class="lozenge" />
                 <div class="text">
-                    <p>
-                        {props.text}
-                    </p>
+                    {props.text}
                 </div>
-                </div>
-                <TableOfContents />
+                <div class="outbutton"><a href='/'>Read the full report</a></div> 
             </div>
-
-            <footer></footer>
-
+            <TableOfContents />
         </div>
+
+        <footer></footer>
+
+    </div>
     )
 }
 

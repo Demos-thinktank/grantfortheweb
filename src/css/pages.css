@@ -2,13 +2,40 @@
 @import './typography.css';
 
 html, body {
-    height: 100%
+    height: 100%;
+    font-family: Light, sans-serif;
 }
 
 a {
     text-decoration: none;
     color: var(--demos-orange);
 }
+h3 {
+    color: var(--demos-orange);
+    margin-bottom: 1rem;
+}
+
+.orange {
+    color: var(--demos-orange)
+}
+
+p .orange {
+    font-weight: 600;
+}
+
+.outbutton {
+    padding: 5px;
+    background-color: var(--demos-orange);
+    width: 224px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.outbutton a{
+    color: white;
+}
+
 /* ------- Landing page ------- */
 
 /* This it he parent element for absolutely positioning the nav */
