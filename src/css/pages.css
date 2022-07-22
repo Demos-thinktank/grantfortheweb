@@ -9,6 +9,7 @@ html, body {
 a {
     text-decoration: none;
     color: var(--demos-orange);
+    font-weight: 600;
 }
 h3 {
     color: var(--demos-orange);
@@ -105,7 +106,7 @@ h2 {
     text-transform: uppercase;
 }
 
-p {
+p, li{
     font-family: Light, sans-serif;
     font-size: 1.2rem;
 }

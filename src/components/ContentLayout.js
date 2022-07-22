@@ -29,7 +29,7 @@ function ContentLayout(props) {
                 <div class="text">
                     {props.text}
                 </div>
-                <div class="outbutton"><a href='/'>Read the full report</a></div> 
+                <div class="outbutton"><a href='https://demos.co.uk/wp-content/uploads/2022/07/The-Costs-of-Creation.pdf'>Read the full report</a></div> 
             </div>
             <TableOfContents />
         </div>
